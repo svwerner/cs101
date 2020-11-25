@@ -1,0 +1,11 @@
+{
+    "name": "cs101",
+    "dockerFile": "Dockerfile",
+    "appPort": [ 5000, 5001 ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-dotnettools.csharp"
+    ]
+}
