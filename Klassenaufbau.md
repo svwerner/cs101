@@ -102,6 +102,14 @@ public double? acceleration { get; set; } = null;
 
 <br>
 
+Klassenattribute und Methoden können innerhalb der Klasse mit dem `this` Keyword angesprochen werden. Es ist auch möglich öhne dieses Keyword auf Attribute zuzugreifen. Es empfiehlt sich jedoch grundsätzlich über `this` zu arbeiten, damit es zu keinen Verwechslungen zwischen Variblen und Klassenattributen kommen kann. 
+Zudem gibt es `base` um auf gleiche Weise die "Parent" Klasse zu referenzieren. Zu beachten ist, dass auf diese Weise keine statisch deklarierten Attribute angesprochen werden können.
+```C#
+this.power = 10;
+```
+
+<br>
+
 **Klassenmethoden**
 
 Methoden können ebenfalls Teil einer Klasse sein. Hier gilt ebenfalls das eben erklärte Prinzip der Zugriffsberechtigungen. 
@@ -136,4 +144,11 @@ public static List<Car> GenerateList(int length) {
 **Klassen-Constructor**
 
 Der `Constructor` einer Klasse wird jedes Mal aufgerufen, sobald eine neue Instanz dieser Klasse erzeugt wird. Der `Constructor` muss nicht zwingend deklariert werden, es macht aber grundsätzlich Sinn dies zu tun.
-Es sind zudem verschiedene `Constructor` Methoden möglich. Hier muss der/(die) Übergabeparameter variieren. 
+Es sind zudem verschiedene `Constructor` Methoden möglich. Hier muss der/(die) Übergabeparameter variieren. Beispiele für Klassenkonstruktoren:
+```C#
+public Car() { }
+
+public Car(Driver new_driver) {
+    this._driver = new_driver;
+}
+```

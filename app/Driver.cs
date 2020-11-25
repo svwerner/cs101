@@ -1,5 +1,5 @@
 using System;
-
+using System.Collections.Generic;
 
 namespace app  {
 
@@ -10,5 +10,16 @@ namespace app  {
 
 
         public Driver() { }
+
+
+        public static List<Driver> ToSampleList(int items) {
+            var drivers = new List<Driver>();
+
+            for (var i = 0; i < items; i++) {
+                drivers.Add(new Driver() { firstname = "Max", lastname = "Mustermann" });
+            }
+
+            return drivers;
+        }
     }
 }
