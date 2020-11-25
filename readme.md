@@ -1,7 +1,7 @@
 # C# 101
 
 ## Grundlagen
-Bei C# handelt es sich ume eine **objektorientierte** Programmiersprache.
+Bei C# handelt es sich um eine **objektorientierte** Programmiersprache.
 Der Einstigespunkt einer C# Anwendung ist somit die Klasse Program in `Program.cs`;
 
 ```C#
