@@ -6,6 +6,7 @@
         "terminal.integrated.shell.linux": "/bin/bash"
     },
     "extensions": [
-        "ms-dotnettools.csharp"
+        "ms-dotnettools.csharp",
+        "k--kato.docomment"
     ]
 }
